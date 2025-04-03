@@ -3,11 +3,12 @@
 namespace Drupal\saludo_brisan\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\Session\AccountInterface;
 
 class SaludoController extends ControllerBase {
 
-  public function saludo(AccountInterface $account) {
+  public function saludo() {
+    // Obtiene el usuario actual a través del servicio
+    $account = \Drupal::currentUser();
     // Obtener el nombre del usuario o "visitante" si es anónimo
     $nombre = $account->isAnonymous() ? $this->t('visitante') : $account->getDisplayName();
 

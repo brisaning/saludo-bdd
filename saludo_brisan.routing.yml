@@ -2,6 +2,6 @@ saludo_brisan.saludo:
   path: '/saludo'
   defaults:
     _controller: '\Drupal\saludo_brisan\Controller\SaludoController::saludo'
-    _title: 'Saludo Brisan'
+    _title: 'Saludo Personalizado'
   requirements:
     _permission: 'access content'
