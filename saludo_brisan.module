@@ -8,11 +8,12 @@
 /**
  * Implements hook_theme().
  */
-function saludo_brisan_theme() {
+function saludo_brisan_theme($existing, $type, $theme, $path) {
   return [
     'saludo_brisan' => [
       'variables' => ['nombre' => NULL],
       'template' => 'saludo-brisan',
+      'path' => $path . '/templates',
     ],
   ];
 }
