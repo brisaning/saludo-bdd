@@ -1,5 +1,5 @@
-name: Saludo Brisan
+name: 'Saludo Brisan'
 type: module
-description: 'Muestra un saludo personalizado al usuario'
-core_version_requirement: ^8 || ^9 || ^10 || ^11
+description: 'Muestra un saludo personalizado'
+core_version_requirement: ^9 || ^10 || ^11
 package: Custom

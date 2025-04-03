@@ -2,22 +2,17 @@
 
 /**
  * @file
- * Contains saludo_brisan.module.php.
+ * Implementación de hooks para el módulo Saludo Brisan.
  */
 
- use Drupal\Core\Render\Element;
-
- /**
-  * Implements hook_theme().
-  */
- function saludo_brisan_theme($existing, $type, $theme, $path) {
-   return [
-     'saludo_brisan' => [
-       'render element' => 'elements',
-       'variables' => [
-         'nombre' => NULL,
-       ],
-       'template' => 'saludo-brisan',
-       'path' => $path . '/templates',
-     ],
-   ];
+/**
+ * Implements hook_theme().
+ */
+function saludo_brisan_theme() {
+  return [
+    'saludo_brisan' => [
+      'variables' => ['nombre' => NULL],
+      'template' => 'saludo-brisan',
+    ],
+  ];
+}
